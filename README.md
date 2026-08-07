@@ -1,52 +1,81 @@
+<div align="center">
+
 # 🎯 AI-Based Facial Recognition Attendance System
 
-An end-to-end **AI-powered Facial Recognition Attendance System** built using **InsightFace, OpenCV, SQLite, and Streamlit**. The application automatically detects and recognizes faces in real-time, marks attendance, stores records in a database, and provides an interactive analytics dashboard.
+### AI-Powered Attendance Management using Computer Vision, InsightFace & Streamlit
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue?style=for-the-badge&logo=sqlite)
+
+<img src="screenshots/dashboard.png" width="1000">
+
+</div>
 
 ---
 
-## 🚀 Features
+# 📖 Overview
 
-- 👤 Face Registration
-- 🧠 AI-Based Face Recognition using InsightFace
-- 📷 Real-Time Face Detection with Webcam
+The **AI-Based Facial Recognition Attendance System** is an end-to-end computer vision application that automates attendance using real-time face recognition.
+
+The application captures live video from a webcam, detects faces, generates facial embeddings using **InsightFace**, recognizes registered students using **Cosine Similarity**, automatically marks attendance, stores records in a **SQLite database**, and provides a beautiful **Streamlit dashboard** for analytics and management.
+
+---
+
+# ✨ Features
+
+- 👤 Student Registration
+- 📸 Face Dataset Collection
+- 🧠 AI Face Recognition using InsightFace
+- 🎥 Real-Time Face Detection
 - ✅ Automatic Attendance Marking
 - 🗄 SQLite Database Integration
-- 📊 Interactive Streamlit Dashboard
-- 📈 Attendance Analytics & Visualization
-- 📥 Export Attendance to Excel
+- 📊 Interactive Analytics Dashboard
+- 📈 Attendance Statistics
 - 👥 Student Management
 - 📜 Attendance History
-- 🚨 Unknown Face Logging
-- 🏗 Modular Project Architecture
+- 📥 Export Attendance to Excel
+- 🚨 Unknown Face Logger
+- 🏗 Modular Project Structure
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 ### Programming Language
+
 - Python
 
-### Computer Vision & AI
-- InsightFace
-- OpenCV
-- ONNX Runtime
-- NumPy
-- Scikit-learn (Cosine Similarity)
+### Computer Vision
 
-### Database
-- SQLite
+- OpenCV
+- InsightFace
+- ONNX Runtime
+
+### Machine Learning
+
+- Cosine Similarity
+- NumPy
+- Scikit-learn
 
 ### Dashboard
+
 - Streamlit
 - Plotly
 - Pandas
 
-### File Handling
+### Database
+
+- SQLite
+
+### Excel Export
+
 - OpenPyXL
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 AI-Based-Facial-Recognition-Attendance-System/
@@ -54,36 +83,38 @@ AI-Based-Facial-Recognition-Attendance-System/
 │
 ├── app.py
 ├── streamlit_app.py
-├── generate_embeddings.py
 ├── register_student.py
+├── generate_embeddings.py
 ├── export_attendance.py
 ├── requirements.txt
 ├── README.md
 │
 ├── assets/
 ├── pages/
+├── screenshots/
 ├── utils/
-├── database/
 ├── dataset/
+├── database/
 ├── embeddings/
 ├── exports/
-├── unknown_faces/
-└── screenshots/
+└── unknown_faces/
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙ Installation
 
-### Clone the Repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Based-Facial-Recognition-Attendance-System.git
+git clone https://github.com/AbhishekBharadwaj2003/AI-Facial-Recognition-Attendance-System.git
 
-cd AI-Based-Facial-Recognition-Attendance-System
+cd AI-Facial-Recognition-Attendance-System
 ```
 
-### Install Dependencies
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -91,41 +122,33 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Project
+# ▶ Running the Project
 
-### 1️⃣ Generate Face Embeddings
+## Generate Face Embeddings
 
 ```bash
 python generate_embeddings.py
 ```
 
----
-
-### 2️⃣ Register a New Student
+## Register Student
 
 ```bash
 python register_student.py
 ```
 
----
-
-### 3️⃣ Start Face Recognition
+## Start Live Face Recognition
 
 ```bash
 python app.py
 ```
 
----
-
-### 4️⃣ Launch Dashboard
+## Launch Streamlit Dashboard
 
 ```bash
 python -m streamlit run streamlit_app.py
 ```
 
----
-
-### 5️⃣ Export Attendance
+## Export Attendance
 
 ```bash
 python export_attendance.py
@@ -133,108 +156,145 @@ python export_attendance.py
 
 ---
 
-## 📊 Dashboard Features
+# 🧠 System Workflow
 
-- Registered Students
-- Today's Attendance
-- Total Attendance Records
-- Attendance Analytics
-- Student Management
-- Attendance History
-- Excel Download
-
----
-
-## 🧠 How It Works
-
-1. Register students by capturing face images.
-2. Generate facial embeddings using InsightFace.
-3. Store embeddings for future recognition.
-4. Detect faces in real time.
-5. Compare embeddings using cosine similarity.
-6. Recognize the student.
-7. Mark attendance automatically.
-8. Store attendance in SQLite.
-9. Display analytics on the Streamlit dashboard.
-
----
-
-## 📸 Screenshots
-
-### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-### Live Recognition
-
-![Live Recognition](screenshots/live_recognition.png)
-
-### Analytics
-
-![analytics](screenshots/analytics.png)
-
-### Register Student
-
-![Register Student](screenshots/register_student.png)
-
-### Students Page
-
-![Students Page](screenshots/students_page.png)
-
-### Download Page
-
-![Download Page](screenshots/download_page.png)
-
-### Attendance History
-
-![Attendance History](screenshots/attendance_history.png)
-
+```text
+Student Registration
+        │
+        ▼
+Capture Face Images
+        │
+        ▼
+Generate Face Embeddings
+        │
+        ▼
+Store Embeddings
+        │
+        ▼
+Live Webcam Detection
+        │
+        ▼
+Face Recognition
+        │
+        ▼
+Attendance Marked
+        │
+        ▼
+SQLite Database
+        │
+        ▼
+Streamlit Dashboard
+```
 
 ---
 
-## 📈 Future Improvements
+# 📸 Application Screenshots
 
-- Live camera feed inside Streamlit
-- Face anti-spoofing
-- Multi-camera support
-- Email attendance reports
-- Cloud database integration
-- User authentication
-- Docker deployment
-- REST API integration
+## 📊 Dashboard
+
+<p align="center">
+<img src="screenshots/dashboard.png" width="900">
+</p>
 
 ---
 
-## 🎓 Learning Outcomes
+## 🎥 Live Recognition
 
-This project demonstrates:
+<p align="center">
+<img src="screenshots/live_recognition.png" width="900">
+</p>
+
+---
+
+## 📈 Attendance Analytics
+
+<p align="center">
+<img src="screenshots/analytics.png" width="900">
+</p>
+
+---
+
+## 👤 Register Student
+
+<p align="center">
+<img src="screenshots/register_student.png" width="900">
+</p>
+
+---
+
+## 👥 Students Page
+
+<p align="center">
+<img src="screenshots/students_page.png" width="900">
+</p>
+
+---
+
+## 📥 Download Attendance
+
+<p align="center">
+<img src="screenshots/download_page.png" width="900">
+</p>
+
+---
+
+## 🕒 Attendance History
+
+<p align="center">
+<img src="screenshots/attendance_history.png" width="900">
+</p>
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates practical experience with:
 
 - Computer Vision
-- Deep Learning
 - Face Recognition
 - Feature Embeddings
 - Cosine Similarity
-- SQLite Database Management
+- Image Processing
+- Real-Time Video Processing
+- SQLite Database Design
 - Streamlit Dashboard Development
-- Python Application Development
-- Modular Software Design
+- Modular Python Application Design
 
 ---
 
-## 📄 License
+# 🚀 Future Improvements
 
-This project is licensed under the MIT License.
+- Face Anti-Spoofing
+- Multi-Camera Support
+- Live Camera Feed inside Streamlit
+- REST API Integration
+- Cloud Database Support
+- Docker Deployment
+- User Authentication
+- Mobile Application
+
+---
+
+# 👨‍💻 Author
+
+## Abhishek Bharadwaj
+
+📧 **Email**
+
+abhishekbharadwaj120@gmail.com
+
+🔗 **LinkedIn**
+
+https://www.linkedin.com/in/abhishek-bharadwaj-63b075317/
+
+💻 **GitHub**
+
+https://github.com/AbhishekBharadwaj2003
 
 ---
 
-## 👨‍💻 Author
+<div align="center">
 
-**Abhishek Bharadwaj**
+### ⭐ If you found this project helpful, consider giving it a Star!
 
-📧 Email: abhishekbharadwaj120@gmail.com
-
-🔗 LinkedIn: https://www.linkedin.com/in/abhishek-bharadwaj-63b075317/
-
-💻 GitHub: https://github.com/AbhishekBharadwaj2003
-
----
+</div>
