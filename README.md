@@ -167,15 +167,28 @@ python export_attendance.py
 
 ### Live Recognition
 
-![Recognition](screenshots/live_recognition.png)
+![Live Recognition](screenshots/live_recognition.png)
 
 ### Analytics
 
 ![Analytics](screenshots/analytics.png)
 
-### Student Registration
+### Register Student
 
-![Registration](screenshots/register_student.png)
+![Register Student](screenshots/register_student.png)
+
+### Students Page
+
+![Students Page](screenshots/students_page.png)
+
+### Download Page
+
+![Download Page](screenshots/download_page.png)
+
+### Attendance History
+
+![Attendance History](screenshots/attendance_history.png)
+
 
 ---
 
