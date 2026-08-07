@@ -295,6 +295,5 @@ https://github.com/AbhishekBharadwaj2003
 
 <div align="center">
 
-### ⭐ If you found this project helpful, consider giving it a Star!
 
 </div>
