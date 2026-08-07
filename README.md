@@ -171,7 +171,7 @@ python export_attendance.py
 
 ### Analytics
 
-![Analytics](screenshots/analytics.png)
+![analytics](screenshots/analytics.png)
 
 ### Register Student
 
